@@ -1,0 +1,14 @@
+body {
+	background-color: #00004d;
+	color: white;
+	background-image: #191765;
+}
+.one	{
+	padding-bottom: 30px;
+ 	border-bottom: 2px solid #8c8c8c;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+	width: 30%;
+	text-align: center;
+	}
