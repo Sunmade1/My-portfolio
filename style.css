@@ -58,4 +58,18 @@ header {
 	li 	{
 			float: left;
 		}
+		li a 	{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 5px 5px;
+			text-decoration: none;
+		}
+	
+	#shift	{float: right;}
+	#navdiv	{
+		width:85%;
+		margin-left: auto;
+		margin-right: auto;
+		}
 	
