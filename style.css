@@ -1,3 +1,5 @@
+html {box-sizing: border-box;}
+*    {box-sizing: inherit;}	
 body {
 	background-color: #00004d;
 	color: white;
@@ -19,59 +21,71 @@ header {
 	width: 30%;
 	text-align: center;
 	}
+p 	{text-align: justify;}
+
 .two 	{
 	margin: 50px auto 20px auto;
 	border-bottom: 2px solid #8c8c8c;
 	width: 30%;
 	padding-bottom: 30px;
 	}
-	
-	
-	table  	{
-		width: 100%;
-		}
-	th 	{padding: 10px; text-align: left; color: #a64dff; font-size: 18px; }
-	td	{text-align: left; padding: 5px; font-size: 12px;}
-	footer	{
-	
-		width: 30%;
-		margin-top: 30px;
-		margin-left: auto;
-		margin-right: auto;
-		}
-	
-	.icon	{
-		padding-top: 40px;
-		padding-bottom: 20px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 40%;
-		}
+#sec2li {font-size: 20px; color: #a64dff;}
 
-	ul 	{
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: #00004d;
-		}
+footer	{
 	
-	li 	{
-			float: left;
-		}
-		li a 	{
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 5px 5px;
-			text-decoration: none;
-		}
-	
-	#shift	{float: right;}
+	width: 30%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	}
 
-	#navdiv	{
-		width:85%;
-		margin-left: auto;
-		margin-right: auto;
-		}
-	
+.icon	{
+	padding-top: 40px;
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	}
+.nav  	{
+   	 list-style-type: none;
+  	 margin: 0;
+  	 padding: 0;
+    	overflow: hidden;
+    	background-color: #00004d;
+	}
+
+#name 	{
+    	float: left;
+	}
+#shift	{float: right;}
+
+ li a 	{
+    	display: block;
+    	color: white;
+    	text-align: center;
+    	padding: 5px 5px;
+    	text-decoration: none;
+	}
+
+.lang   {list-style-type: none;}
+.spans 	{display: inline-block;}
+span li {line-height: 1.8;}
+#navdiv	{
+	width:85%;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+@media screen and (max-width: 600px){
+.one { 	border-bottom: 2px solid #8c8c8c;
+	width: 85%;
+	padding: 15px;
+	margin-left: auto;
+	margin-right: auto;
+			}
+header {font-size: 40px;}
+footer {width: 110%; margin-top: -20px;}
+icon 	{width: 100%; }
+#navdiv {width: 100%;}
+.two	{width: 100%;}
+		}  
