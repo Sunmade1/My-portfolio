@@ -1,5 +1,10 @@
-html { box-sizing: border-box; }
-* { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
 
 body {
   background-color: #00004d;
@@ -13,9 +18,13 @@ header {
   font-family: serif;
   margin-bottom: -5px;
 }
-.headname div { display: inline-block; }
+
+.headname div {
+  display: inline-block;
+}
 
 #name {
+  float: left;
   margin-top: 10px;
   margin-left: 15px;
 }
@@ -29,7 +38,10 @@ header {
   width: 30%;
   text-align: center;
 }
-p { text-align: justify; }
+
+p {
+  text-align: justify;
+}
 
 .two {
   margin: 50px auto 20px auto;
@@ -37,7 +49,11 @@ p { text-align: justify; }
   width: 30%;
   padding-bottom: 30px;
 }
-#sec2li { font-size: 20px; color: #a64dff; }
+
+#sec2li {
+  font-size: 20px;
+  color: #a64dff;
+}
 
 footer {
   width: 30%;
@@ -62,10 +78,7 @@ footer {
   background-color: #00004d;
 }
 
-#name {
-  float: left;
-}
-#shift { float: right; }
+.shift { float: right; }
 
 li a {
   display: block;
@@ -75,9 +88,17 @@ li a {
   text-decoration: none;
 }
 
-.lang { list-style-type: none; }
-.spans { display: inline-block; }
-span li { line-height: 1.8; }
+.lang {
+  list-style-type: none;
+}
+
+.spans {
+  display: inline-block;
+}
+
+div li {
+  line-height: 1.8;
+}
 
 #navdiv {
   width: 85%;
@@ -85,24 +106,17 @@ span li { line-height: 1.8; }
   margin-right: auto;
 }
 
-@media screen and (max-width: 600px) {
-  .one {
-    border-bottom: 2px solid #8c8c8c;
-    width: 85%;
-    padding: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  header { font-size: 40px; }
-  footer { width: 110%; margin-top: -20px; }
-  icon { width: 100%; }
-  #navdiv { width: 100%; }
-  .two { width: 100%; }
-  .nav li { display: none; }
-  .nav li:first-child { display: inline; margin-right: 10px; }
+.skill li {
+  display: inline;
+  padding: 0 30px;
+  border-right: 1px solid grey;
+  font-size: 18px;
+  color: #809fff;
 }
 
-@media screen and (min-width: 900px) { .nav li:first-child { display: none; } }
+.nav li:first-child {
+  display: none;
+}
 
 /* -Work section starts here */
 
@@ -125,7 +139,6 @@ h1 {
   flex-direction: column;
   flex-wrap: nowrap;
 }
-.boxone:nth-child(even) { flex-direction: row-reverse; flex-wrap: nowrap; margin-left: -15px; }
 
 .boxone {
   display: flex;
@@ -135,20 +148,33 @@ h1 {
   justify-content: space-around;
 }
 
+.boxone:nth-child(even) {
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+
 div img {
   height: 290px;
   margin-top: 20px;
-  width: 700px;
+  width: 650px;
 }
-.text { margin-top: 30px; }
+
+.rev {
+  margin-left: 20px;
+}
+
+.text {
+  margin-top: 30px;
+}
 
 div p {
   text-align: justify;
   line-height: 1.5;
-  font-family: "sans-serif" verdana;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
   margin-left: 20px;
   margin-top: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 div h1 {
@@ -162,14 +188,9 @@ div h1 {
   padding: 0;
 }
 
-.skill li {
-  display: inline;
-  padding: 0 30px;
-  border-right: 1px solid grey;
-  font-size: 18px;
-  color: #809fff;
+.skill li:last-child {
+  border-right: none;
 }
-.skill li:last-child { border-right: none; }
 
 button {
   background-color: #4d79ff;
@@ -183,8 +204,66 @@ button {
 @media screen and (max-width: 600px) {
   .parent { width: 100%; }
   .text { margin-left: -10px; }
-  .boxone { display: flex; flex-direction: column; width: 100%; }
-  div img { width: 100%; height: auto; }
-  .skill li { font-size: 18px; padding: 0 24px; width: 200%; }
-  .skill { width: 130%; }
+
+  .boxone {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  div img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .skill li {
+    font-size: 14px;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .nav li {
+    display: none;
+  }
+
+  .nav li:first-child {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .skill {
+    width: 120%;
+    margin: 0 auto;
+  }
+
+  .boxone:nth-child(even) {
+    flex-direction: column;
+  }
+
+  /* media queries for header section */
+
+  .one {
+    border-bottom: 2px solid #8c8c8c;
+    width: 85%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
+    font-size: 40px;
+  }
+
+  footer {
+    width: 110%;
+    margin-top: -20px;
+  }
+
+  #navdiv {
+    width: 100%;
+  }
+
+  .two {
+    width: 100%;
+  }
 }
